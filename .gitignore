@@ -27,3 +27,4 @@ hs_err_pid*
 /accessing-data-mysql-jpa/target/
 .idea/
 springboot-guides-demo.iml
+/accessing-data-mysql-mybatis/target/
