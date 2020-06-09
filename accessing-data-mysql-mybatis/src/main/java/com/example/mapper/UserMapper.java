@@ -32,6 +32,6 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
 
-    @Select("select count() from user")
+    @Select("select count(*) from user")
     int selectCount();
 }

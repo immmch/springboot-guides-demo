@@ -25,4 +25,4 @@
     </build>
 ```
 
-- 
+- @Repository [必须]

@@ -21,8 +21,21 @@ public class SpringMybatis {
         SpringApplication.run(SpringMybatis.class, args);
     }
 
+    /**
+     * 注解和jpa相似的使用
+     * @return
+     */
     @GetMapping("/test")
-    public User test(){
+    public int test(){
+        return userMapper.selectCount();
+    }
+
+    /**
+     * 常规使用,xml配置sql 进行 CRUD
+     * @return
+     */
+    @GetMapping("/test1")
+    public User test1(){
         return userMapper.selectByPrimaryKey(1);
     }
 
