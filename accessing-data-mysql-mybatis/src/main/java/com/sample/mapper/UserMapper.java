@@ -1,9 +1,8 @@
-package com.example.mapper;
+package com.sample.mapper;
 
-import com.example.model.User;
-import com.example.model.UserExample;
+import com.sample.model.User;
+import com.sample.model.UserExample;
 import java.util.List;
-
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;

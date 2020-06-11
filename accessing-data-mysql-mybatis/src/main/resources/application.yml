@@ -1,4 +1,10 @@
 spring:
+  profiles:
+    active: mybatis
+---
+# mybatis 配置
+spring:
+  profiles: mybatis
   jpa:
     hibernate:
       dialect:
@@ -8,7 +14,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-# mybatis 相关配置 **这里不需要配置也可以使用**
+# mybatis 相关配置 **这里不需要配置也可以使用** `应该`是使用的 mybatis-spring-boot-starter 的原因不需要配置了
 # mybatis:
   # mapper-locations: classpath*:com/example/mapper/*.xml
   # type-aliases-package: com.example.model

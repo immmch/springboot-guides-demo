@@ -1,26 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>springboot-guides-demo</artifactId>
-        <groupId>org.example</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+- 都不需要添加 `@Repository`, 报红是因为IDEA 验证问题; 如果要去掉红色波浪线, 在Mapper 接口类上加 `@Repository`
+- pom.xml 相关配置 [必须] 不然无法读取mapper.xml文件,会出现:`Invalid bound statement (not found)` 错误!
 
-    <artifactId>accessing-data-mysql-mybatis</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-    </dependencies>
-
-
-    <build>
+```xml
+<build>
         <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
         <resources>
             <resource>
@@ -41,5 +23,4 @@
             <!--        </resource>-->
         </resources>
     </build>
-
-</project>
+```

@@ -1,7 +1,7 @@
-package com.example;
+package com.sample;
 
-import com.example.mapper.UserMapper;
-import com.example.model.User;
+import com.sample.mapper.UserMapper;
+import com.sample.model.User;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

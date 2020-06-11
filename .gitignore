@@ -23,8 +23,9 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-/accessing-data-mysql-jpa/target/
 .idea/
 springboot-guides-demo.iml
+# 项目编译输出目录
+/accessing-data-mysql-jpa/target/
 /accessing-data-mysql-mybatis/target/
+/accessing-data-mysql-mybatispuls/target/

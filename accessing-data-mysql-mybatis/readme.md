@@ -1,4 +1,4 @@
-- @MapperScan("com.example.mapper") mapper接口扫描[必须]
+- @MapperScan("com.sample.mapper") mapper接口扫描[必须]
 - pom.xml 相关配置 [必须] 不然无法读取mapper.xml文件,会出现:`Invalid bound statement (not found)` 错误!
 
 ```xml
