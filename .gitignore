@@ -29,3 +29,4 @@ springboot-guides-demo.iml
 /accessing-data-mysql-jpa/target/
 /accessing-data-mysql-mybatis/target/
 /accessing-data-mysql-mybatispuls/target/
+/storing-info-log-logback/target/

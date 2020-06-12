@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active: @profileActive@ # 这个启用maven的profile配置;如果是 dev,prod,test 就是直接指定 application-{dev,test,prod}.yml;
+

@@ -5,12 +5,13 @@ spring:
 # mybatis 配置
 spring:
   profiles: mybatis
-  jpa:
-    hibernate:
-      dialect:
-      ddl-auto: update
+# 对 mybatis 没用
+#  jpa:
+#    hibernate:
+#      dialect:
+#      ddl-auto: create-drop
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/spring-demo-guides?serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver

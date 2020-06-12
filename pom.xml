@@ -8,6 +8,7 @@
         <module>accessing-data-mysql-jpa</module>
         <module>accessing-data-mysql-mybatis</module>
         <module>accessing-data-mysql-mybatispuls</module>
+        <module>storing-info-log-logback</module>
     </modules>
 
     <parent>

@@ -1,9 +1,10 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop # 在会话建立时,删除所有数据记录
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example?serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+
